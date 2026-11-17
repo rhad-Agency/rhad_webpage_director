@@ -1,0 +1,30 @@
+# build output
+dist/
+*.skill
+
+# node
+node_modules/
+npm-debug.log*
+
+# render and analysis output
+analysis/
+render/
+.chrome-profile/
+post-*/
+
+# os and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# secrets (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# test output that must never be committed from inside the skill folder
+plugins/**/verification/

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>x</title>
+<style>
+  /* Deliberately bad page used to prove web-lint catches slop. Do not copy. */
+  body { font-family: Inter, sans-serif; background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+  .card { backdrop-filter: blur(12px); box-shadow: 0 20px 60px rgba(0,0,0,.35); border-radius: 24px; animation: float 3s infinite; }
+  .glow { filter: blur(80px); }
+  @keyframes float { 50% { transform: translateY(-12px); } }
+</style>
+</head>
+<body>
+<h1>Unlock seamless, cutting-edge AI-powered growth</h1>
+<h1>Revolutionary solutions</h1>
+<img src="hero.png">
+<p>Trusted by 10,000+ customers. As seen in the press. ★★★★★</p>
+<p>Lorem ipsum dolor sit amet.</p>
+<a href="#">Learn more</a>
+<script>
+  gsap.to('.card', { y: 40 });
+  setTimeout(function () { document.getElementById('s').textContent = 'Thank you, submitted'; }, 800);
+</script>
+</body>
+</html>

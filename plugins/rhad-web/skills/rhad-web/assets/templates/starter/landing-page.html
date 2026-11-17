@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[NEEDS: unique 50 to 60 character title matching the ad promise] | RHAD</title>
+<meta name="description" content="[NEEDS: 120 to 155 character description]">
+<meta name="robots" content="noindex, follow"><!-- [NEEDS: remove for an indexed page. Ad-only pages are usually noindex. Ask the user.] -->
+<!-- Starter campaign landing page: one audience, one offer, one action. Scaffold with:
+     node scripts/new-page.mjs <dir> --type lp --brand rhad
+     Match the promise of the ad or message that sends visitors here. -->
+<link rel="preload" href="assets/fonts/Unbounded-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/PlusJakartaSans-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/tokens/rhad-web.css">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="RHAD home"><img src="assets/rhad/logos/rhad-logo-red-tight.png" alt="RHAD" width="166" height="38"></a>
+    <a class="btn" href="#enquiry">[NEEDS: CTA label naming the outcome]</a>
+  </div>
+</header>
+
+<main id="main">
+  <section id="top" class="hero-band" aria-labelledby="h1">
+  <div class="hero wrap">
+    <h1 id="h1" class="display-xl">[NEEDS: the ad's promise, two lines or fewer]</h1>
+    <p class="body-lg measure">[NEEDS: who this is for, the offer, and the price or scope signal with its boundary]</p>
+    <p class="actions"><a class="btn" href="#enquiry">[NEEDS: CTA label naming the outcome]</a></p>
+  </div>
+  </section>
+
+  <section id="mechanism" class="section on-step" aria-labelledby="mech-h">
+    <div class="wrap grid split">
+      <h2 id="mech-h" class="display-md">[NEEDS: how it works, shown not described]</h2>
+      <div class="measure stack">
+        <p class="body-lg">[NEEDS: the mechanism in plain words, with an honest label if it is an example]</p>
+        <p class="small soft">[NEEDS: boundary line: what this does not promise]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="enquiry" class="section on-red" aria-labelledby="enquiry-h">
+    <div class="wrap grid split">
+      <div class="stack">
+        <h2 id="enquiry-h" class="display-xl">[NEEDS: conversion headline]</h2>
+        <p class="body-lg measure">[NEEDS: what happens next, and what does not]</p>
+        <p class="small">[NEEDS: scope and cost line beside the form, for example "Scope and cost are confirmed before you proceed."]</p>
+        <p class="small">Or contact us directly: [NEEDS: real WhatsApp, phone or email]</p>
+      </div>
+      <form id="enquiry-form" class="stack" method="post" action="#enquiry" novalidate>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err"><p class="error" id="f-name-err" hidden></p></div>
+        <div class="field"><label for="f-email">Business email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err"><p class="error" id="f-email-err" hidden></p></div>
+        <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" required aria-describedby="f-company-err"><p class="error" id="f-company-err" hidden></p></div>
+        <div class="field"><label for="f-phone">Mobile (optional)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
+        <div class="field"><label for="f-context">Anything we should know (optional)</label><textarea id="f-context" name="context"></textarea></div>
+        <noscript><p class="status">Scripts are off, so this form cannot send. Contact us directly: [NEEDS: real WhatsApp, phone or email].</p></noscript>
+        <button class="btn" type="submit">[NEEDS: request label]</button>
+        <p class="status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <img src="assets/rhad/logos/rhad-logo-white-tight.png" alt="RHAD" width="166" height="38">
+    <p class="small soft">[NEEDS: parent line and copyright]</p>
+    <p class="small"><a class="link" id="privacy-link" href="[NEEDS: real privacy URL]">Privacy</a></p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/site.js" defer></script>
+</body>
+</html>

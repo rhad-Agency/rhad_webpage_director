@@ -1,0 +1,30 @@
+/* RHAD45 web, direction B: live site (Nov 2026). Layer this AFTER rhad-web.css.
+   Source: edge-DESIGN.md "RHAD45 page" section and the live page capture in assets/references/rhad45-live-lp-*.png.
+   Ink stage header and hero, step-toned sections, field-dark for work and footer. Fonts are the same as every RHAD page: Unbounded and Plus Jakarta Sans only (owner decision; the live page's Sora hero is not used).
+   The hero may carry ONE broad red glow (the only gradient allowed on any RHAD page). Mark it with a slop-ok comment that cites rhad45-web.md. */
+:root {
+  --ink-stage: #12161C;
+  --red: #D21131;            /* page red: CTA, price figure, arcs */
+  --red-press: #B00822;
+  --red-hot: #F03131;        /* the logo's own red, also for red marks on ink */
+  --card-off: #F4F1EC;
+  --step-2: #E8E6E1; --red-wash: #FBE7EA;
+  --on-ink-1: #E4E6E9; --on-ink-2: #D9DCE0; --on-ink-3: #C9CDD3; --on-ink-4: #9EA4AC;
+  --radius: 0px;             /* square everywhere except one depicted phone */
+}
+.site-header { background: var(--ink-stage); color: #fff; border-bottom-color: var(--field-dark-step); }
+.site-header .nav a:not(.btn) { color: var(--on-ink-1); }
+.site-header .menu-btn { color: #fff; border-color: #fff; }
+@media (max-width: 959px) { .site-header .nav { background: var(--ink-stage); border-bottom-color: var(--field-dark-step); } }
+.hero-band { background: var(--ink-stage); color: #fff; }
+.hero-band .hero h1 { font-weight: 700; font-size: clamp(34px, 4.6vw, 64px); line-height: 1.06; letter-spacing: -.035em; max-width: 16ch; }
+.hero-band .hero p { color: var(--on-ink-2); }
+.hero-band .link { color: #fff; }
+.hero-band :focus-visible, .site-header :focus-visible { outline-color: #fff; }
+.red-text, .hero-band em { color: var(--red-hot); font-style: normal; }
+/* Module cards: off-white, 2px ink outline, 5px red offset (a flat offset, not a soft shadow). */
+.card-45 { background: var(--card-off); color: var(--ink); border: 2px solid var(--ink); box-shadow: 5px 5px 0 var(--red); padding: 20px; }
+.on-step .display-md, .on-step .display-xl { color: var(--ink); }
+.btn.btn-ghost { background: transparent; color: #fff; border-color: #fff; }
+.btn.btn-ghost:hover { background: #fff; color: var(--ink-stage); }
+.site-footer { background: var(--field-dark); }

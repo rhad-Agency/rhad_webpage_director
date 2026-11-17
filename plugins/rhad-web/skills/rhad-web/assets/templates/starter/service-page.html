@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[NEEDS: unique 50 to 60 character title with the page promise] | RHAD</title>
+<meta name="description" content="[NEEDS: 120 to 155 character plain-sentence description for this page]">
+<!-- Starter service page. Scaffold with: node scripts/new-page.mjs <dir> --type service --brand rhad
+     Every [NEEDS] must be resolved from the confirmed brief before checkpoint 5 (web-lint --final fails on them). -->
+<link rel="preload" href="assets/fonts/Unbounded-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/PlusJakartaSans-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/tokens/rhad-web.css">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="RHAD home"><img src="assets/rhad/logos/rhad-logo-red-tight.png" alt="RHAD" width="166" height="38"></a>
+    <a class="btn hdr-cta" href="#enquiry">[NEEDS: short CTA]</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Primary">
+      <a href="#what">What we do</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">Questions</a>
+      <a class="btn" href="#enquiry">[NEEDS: CTA label naming the outcome]</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="top" class="hero-band" aria-labelledby="h1">
+  <div class="hero wrap">
+    <h1 id="h1" class="display-xl">[NEEDS: headline naming the customer's situation, two lines or fewer]</h1>
+    <p class="body-lg measure">[NEEDS: one plain sentence on who this is for and what RHAD does about it]</p>
+    <p class="actions"><a class="btn" href="#enquiry">[NEEDS: CTA label naming the outcome]</a> <a class="link" href="#how">See how it works</a></p>
+    <!-- Signature: name the one visual idea for this page in the plan (monument type, cube, red thread, a working mechanism). -->
+  </div>
+  </section>
+
+  <section id="situations" class="section on-step" aria-labelledby="situations-h">
+    <div class="wrap grid split">
+      <h2 id="situations-h" class="display-xl">[NEEDS: the problem in the customer's words]</h2>
+      <div class="measure stack">
+        <p class="body-lg">[NEEDS: first real situation, one or two sentences]</p>
+        <p class="body-lg">[NEEDS: second real situation]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="what" class="section wrap" aria-labelledby="what-h">
+    <h2 id="what-h" class="display-md">[NEEDS: what RHAD does about it]</h2>
+    <dl class="defs">
+      <div><dt class="display-md">[NEEDS: service element]</dt><dd>[NEEDS: what it is, in plain words. What it does not promise.]</dd></div>
+      <div><dt class="display-md">[NEEDS: service element]</dt><dd>[NEEDS: what it is. What is included and what is separate.]</dd></div>
+    </dl>
+  </section>
+
+  <section id="how" class="section on-step" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 id="how-h" class="display-md">How it works</h2>
+      <ol class="slip">
+        <li><span>[NEEDS: step the client sees]</span><span class="owner">[NEEDS: who owns it]</span></li>
+        <li><span>[NEEDS: step]</span><span class="owner">[NEEDS: owner]</span></li>
+        <li><span>[NEEDS: step]</span><span class="owner">[NEEDS: owner]</span></li>
+      </ol>
+      <p class="small soft">[NEEDS: confirmed scope and cost statement, for example "Scope and cost are confirmed before you proceed."]</p>
+      <p><a class="btn" href="#enquiry">[NEEDS: CTA label naming the outcome]</a></p>
+    </div>
+  </section>
+
+  <section id="proof" class="section wrap" aria-labelledby="proof-h">
+    <h2 id="proof-h" class="display-md">[NEEDS: real, permitted proof, or remove this section]</h2>
+    <blockquote class="quote">
+      <p class="display-md">[NEEDS: verbatim quote with permission]</p>
+      <footer class="small soft">[NEEDS: name, company, and the label "RHAD agency client" where it is not product proof]</footer>
+    </blockquote>
+  </section>
+
+  <section id="faq" class="section on-step" aria-labelledby="faq-h">
+    <div class="wrap measure">
+      <h2 id="faq-h" class="display-md">Questions</h2>
+      <details class="faq"><summary>[NEEDS: a real objection]</summary><p>[NEEDS: a plain answer that stands alone]</p></details>
+      <details class="faq"><summary>[NEEDS: a real objection]</summary><p>[NEEDS: a plain answer]</p></details>
+    </div>
+  </section>
+
+  <section id="enquiry" class="section on-red" aria-labelledby="enquiry-h">
+    <div class="wrap grid split">
+      <div class="stack">
+        <h2 id="enquiry-h" class="display-xl">[NEEDS: conversion headline]</h2>
+        <p class="body-lg measure">[NEEDS: what happens next, and what does not. Response window only if true.]</p>
+        <p class="small">[NEEDS: scope and cost line beside the form, for example "Scope and cost are confirmed before you proceed."]</p>
+        <p class="small">Or contact us directly: [NEEDS: real WhatsApp, phone or email]</p>
+      </div>
+      <form id="enquiry-form" class="stack" method="post" action="#enquiry" novalidate>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err"><p class="error" id="f-name-err" hidden></p></div>
+        <div class="field"><label for="f-email">Business email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err"><p class="error" id="f-email-err" hidden></p></div>
+        <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" required aria-describedby="f-company-err"><p class="error" id="f-company-err" hidden></p></div>
+        <div class="field"><label for="f-phone">Mobile (optional)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
+        <div class="field"><label for="f-context">Anything we should know (optional)</label><textarea id="f-context" name="context"></textarea></div>
+        <noscript><p class="status">Scripts are off, so this form cannot send. Contact us directly: [NEEDS: real WhatsApp, phone or email].</p></noscript>
+        <button class="btn" type="submit">[NEEDS: request label, for example "Request my review"]</button>
+        <p class="status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <img src="assets/rhad/logos/rhad-logo-white-tight.png" alt="RHAD" width="166" height="38">
+    <p class="small soft">[NEEDS: parent line and copyright]</p>
+    <p class="small"><a class="link" id="privacy-link" href="[NEEDS: real privacy URL]">Privacy</a></p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/site.js" defer></script>
+</body>
+</html>

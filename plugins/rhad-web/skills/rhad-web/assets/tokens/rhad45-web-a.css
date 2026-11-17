@@ -1,0 +1,35 @@
+/* RHAD45 web, direction A: light handoff (23 Oct 2026). Layer this AFTER rhad-web.css.
+   Source: sources/04-design-system.md and 02-brand-guide (white, paper, ink; action red for anything small or functional;
+   brand red #F03131 only for the logo, large display emphasis and decorative rules). No red fields. */
+:root {
+  --brand-red: #F03131;      /* logo, large display emphasis, rules */
+  --action-red: #B62424;     /* buttons, small red text, links (6.43:1 on white) */
+  --action-hover: #951D1D;
+  --red: #B62424; --red-press: #951D1D;
+  --ink: #191919; --ink-soft: #5B5B5B; --canvas: #FFFFFF; --canvas-step: #F5F3EF; --paper: #F5F3EF;
+  --field-dark: #191919; --field-dark-step: #2C2F33; --on-dark-soft: #D6D7D9; --focus: #191919;
+  --soft-border: #D8D3CC; --input-border: #76716B; --success: #176348; --error: #A21D24;
+  --fs-display-xl: clamp(28px, 4vw, 44px);   /* H2 */
+  --fs-display-md: clamp(20px, 2.2vw, 26px); /* H3 */
+  --fs-body-lg: clamp(18px, 1.6vw, 21px); --fs-body: 17px;
+  --margin: clamp(20px, 3.4vw, 48px);
+  --section-gap: clamp(56px, 9vw, 112px);
+  --radius: 6px;
+}
+h1 { font-weight: 700; font-size: clamp(36px, 5.2vw, 68px); line-height: 1.1; letter-spacing: -.025em; }
+.display-xl { font-weight: 600; line-height: 1.18; letter-spacing: -.025em; }
+.display-md { font-weight: 600; line-height: 1.25; letter-spacing: -.02em; }
+.hero h1 { max-width: 18ch; }
+.btn { border-radius: var(--radius); font-weight: 700; min-height: 48px; }
+.field input, .field select, .field textarea { border-radius: 4px; background: #fff; border: 1px solid var(--input-border); }
+.field input:hover, .field select:hover, .field textarea:hover { border-color: var(--ink); }
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { outline: 3px solid var(--action-red); outline-offset: 2px; }
+/* The conversion section is ink with a white form panel, not a red field. */
+.on-red { background: var(--ink); color: #fff; }
+.on-red .btn { background: var(--action-red); color: #fff; }
+.on-red .btn:hover { background: var(--action-hover); }
+.on-red form { background: #fff; color: var(--ink); padding: clamp(20px, 3vw, 32px); border-radius: var(--radius); }
+.on-red .field .error { color: var(--error); }
+.on-red .status { color: var(--ink); }
+.on-red form :focus-visible { outline-color: var(--action-red); }
+.slip { border-radius: 0; }

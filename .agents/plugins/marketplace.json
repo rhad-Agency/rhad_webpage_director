@@ -1,0 +1,20 @@
+{
+  "name": "rhad-web-skill",
+  "interface": {
+    "displayName": "RHAD Web Skill"
+  },
+  "plugins": [
+    {
+      "name": "rhad-web",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rhad-web"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}

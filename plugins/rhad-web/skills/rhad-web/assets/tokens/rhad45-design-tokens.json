@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "colour": {
+    "brand": "#F03131",
+    "action": "#B62424",
+    "actionHover": "#951D1D",
+    "ink": "#191919",
+    "white": "#FFFFFF",
+    "paper": "#F5F3EF",
+    "muted": "#5B5B5B",
+    "border": "#D8D3CC",
+    "inputBorder": "#76716B",
+    "success": "#176348",
+    "error": "#A21D24"
+  },
+  "typography": {
+    "display": {
+      "family": "Unbounded",
+      "weights": [
+        500,
+        600,
+        700
+      ]
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "h1": {
+      "minPx": 36,
+      "maxPx": 68,
+      "lineHeight": 1.1,
+      "weight": 700
+    },
+    "h2": {
+      "minPx": 28,
+      "maxPx": 44,
+      "lineHeight": 1.18,
+      "weight": 600
+    },
+    "h3": {
+      "minPx": 20,
+      "maxPx": 26,
+      "lineHeight": 1.25,
+      "weight": 600
+    },
+    "bodySizePx": {
+      "mobile": 16,
+      "desktop": 18
+    },
+    "captionPx": 14
+  },
+  "spacingPx": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "layout": {
+    "containerMaxPx": 1200,
+    "gutterMinPx": 20,
+    "gutterMaxPx": 48,
+    "sectionMinPx": 56,
+    "sectionMaxPx": 112,
+    "stackSplitBelowPx": 960,
+    "oneColumnCardsBelowPx": 600
+  },
+  "component": {
+    "buttonMinHeightPx": 48,
+    "inputMinHeightPx": 48,
+    "radiusPx": 6,
+    "inputRadiusPx": 4,
+    "chatRadiusPx": 8,
+    "logoMinWidthPx": 180,
+    "logoDefaultWidthPx": 220,
+    "iconMinPx": 32
+  },
+  "motion": {
+    "transitionMs": 160,
+    "entranceMaxMs": 320,
+    "entranceTranslateMaxPx": 12,
+    "respectReducedMotion": true
+  }
+}

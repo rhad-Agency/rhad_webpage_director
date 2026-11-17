@@ -1,0 +1,278 @@
+{
+  "version": "1.0",
+  "brand": "RHAD45",
+  "date": "2026-10-23",
+  "metadata": {
+    "title": "RHAD45 | Practical Business Automation for Singapore SMEs",
+    "description": "Choose one RHAD45 product for S$100/month: WhatsApp enquiries, customer follow-ups, review requests or reporting. Arrange a 45-minute business review.",
+    "canonical": "https://45.rhad.agency/",
+    "socialTitle": "RHAD45 — Business, joined up.",
+    "socialDescription": "Practical automation for everyday business follow-through. One selected product for S$100/month, with ongoing monitoring and support."
+  },
+  "header": {
+    "logoAlt": "RHAD45",
+    "navigation": [
+      {
+        "label": "How it works",
+        "href": "#how-it-works"
+      },
+      {
+        "label": "Products",
+        "href": "#products"
+      },
+      {
+        "label": "FAQs",
+        "href": "#faqs"
+      }
+    ],
+    "cta": {
+      "label": "Arrange a business review",
+      "href": "#business-review"
+    }
+  },
+  "hero": {
+    "id": "top",
+    "eyebrow": "BUSINESS AUTOMATION FOR SINGAPORE SMEs",
+    "headline": "Great businesses shouldn't run on “I'll remember.”",
+    "body": [
+      "A lead needs an answer. A customer should hear from you again. A happy client could leave a review. And someone needs to make sense of the numbers.",
+      "RHAD45 brings practical automation to everyday business follow-through, with your team in charge of the next step."
+    ],
+    "price": "One selected product. S$100/month.",
+    "included": "Ongoing monitoring and support included.",
+    "costNote": "Setup, WhatsApp/API usage and third-party software are charged separately. Scope and costs are confirmed before you proceed.",
+    "primaryCta": {
+      "label": "Arrange a 45-minute business review",
+      "href": "#business-review"
+    },
+    "secondaryCta": {
+      "label": "Explore the four products",
+      "href": "#products"
+    },
+    "graphic": {
+      "title": "Keep the next step moving.",
+      "steps": [
+        "Enquiry received",
+        "Details captured",
+        "Team follows up"
+      ],
+      "caption": "Illustrative lead-response journey. Your team confirms any appointment."
+    }
+  },
+  "demo": {
+    "id": "how-it-works",
+    "eyebrow": "SEE THE FOLLOW-THROUGH",
+    "headline": "Fast replies beat “Sorry, just saw this.”",
+    "body": "A new WhatsApp enquiry shouldn't depend on somebody spotting a notification. WhatsApp Lead Response acknowledges the message, collects useful information and passes the details to your team.",
+    "label": "Illustrative WhatsApp conversation",
+    "messages": [
+      {
+        "speaker": "customer",
+        "text": "Hi, I'd like to know more about your services."
+      },
+      {
+        "speaker": "automated",
+        "text": "Happy to help. What are you looking for?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Could someone talk me through the options?"
+      },
+      {
+        "speaker": "automated",
+        "text": "Of course. When is a good time for our team to reach you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Tomorrow afternoon."
+      },
+      {
+        "speaker": "automated",
+        "text": "Thank you. I'll pass that along with your enquiry."
+      }
+    ],
+    "result": "Enquiry captured. Your team follows up.",
+    "note": "Illustrative example, not a live chat. An enquiry does not confirm an appointment.",
+    "cta": {
+      "label": "Discuss your enquiry flow",
+      "href": "#business-review",
+      "interest": "WhatsApp enquiries"
+    }
+  },
+  "provenance": {
+    "id": "from-rhad",
+    "eyebrow": "FROM RHAD",
+    "headline": "A practical product. An experienced team behind it.",
+    "body": "RHAD45 is part of RHAD, bringing the agency's creative, technology and marketing experience to everyday business automation.",
+    "link": {
+      "label": "Explore RHAD's work",
+      "href": "https://www.rhad.agency/portfolios/"
+    },
+    "note": "RHAD agency experience is separate from RHAD45 product results."
+  },
+  "offer": {
+    "id": "products",
+    "eyebrow": "FOUR PRODUCTS. START WITH ONE.",
+    "headline": "Fewer loose ends. Clearer next steps.",
+    "body": "Choose the product that addresses what your business needs most. Start with one agreed scope, with monitoring and support to keep the routine on track.",
+    "products": [
+      {
+        "id": "whatsapp-lead-response",
+        "number": "01",
+        "label": "Enquiries",
+        "name": "WhatsApp Lead Response",
+        "headline": "Give every enquiry a useful first response.",
+        "description": "Acknowledge new WhatsApp messages, capture the details that matter and pass the enquiry to the right person.",
+        "handoff": "Your team takes the conversation forward.",
+        "cta": "Ask about lead response",
+        "interest": "WhatsApp enquiries"
+      },
+      {
+        "id": "loyalty-loop",
+        "number": "02",
+        "label": "Follow-ups",
+        "name": "Loyalty Loop",
+        "headline": "Make the next conversation part of the routine.",
+        "description": "Keep customers engaged with relevant, permission-based WhatsApp follow-ups after their purchase or visit.",
+        "handoff": "You agree when to follow up and what to say.",
+        "cta": "Ask about Loyalty Loop",
+        "interest": "Customer retention"
+      },
+      {
+        "id": "review-engine",
+        "number": "03",
+        "label": "Reviews",
+        "name": "Review Engine",
+        "headline": "Give good work a chance to be heard about.",
+        "description": "Make genuine review requests and customer feedback part of the customer journey.",
+        "handoff": "Customers share their own honest experience.",
+        "cta": "Ask about Review Engine",
+        "interest": "Reviews"
+      },
+      {
+        "id": "reporting",
+        "number": "04",
+        "label": "Reporting",
+        "name": "Dashboard Reporting & Recommendations",
+        "headline": "Know what deserves attention next.",
+        "description": "Bring agreed business measures into a clearer view, with reporting and recommendations to support your next decision.",
+        "handoff": "Data sources and reporting scope are agreed before setup.",
+        "cta": "Ask about reporting",
+        "interest": "Reporting & decisions"
+      }
+    ],
+    "priceBlock": {
+      "headline": "One product. S$100/month.",
+      "body": "Choose any one of the four RHAD45 products. Ongoing monitoring and support are included within the agreed scope.",
+      "costNote": "Setup, WhatsApp/API usage and third-party software are charged separately. If you need more than one product, we'll confirm the scope and pricing before you proceed.",
+      "cta": {
+        "label": "Find the right product for your business",
+        "href": "#business-review"
+      }
+    },
+    "agencyBridge": {
+      "headline": "RHAD45 handles the follow-through. RHAD helps create more demand.",
+      "body": "Need help reaching more customers? RHAD's SEO, social media and marketing strategy services are scoped and quoted separately."
+    }
+  },
+  "faq": {
+    "id": "faqs",
+    "eyebrow": "A FEW USEFUL ANSWERS",
+    "headline": "Know what you're signing up for.",
+    "items": [
+      {
+        "question": "Can RHAD45 work with the systems we already use?",
+        "answer": "We check that first. We review the relevant accounts and workflows you choose to share, then confirm the supported connections, the chosen scope and what your team needs to approve before setup."
+      },
+      {
+        "question": "What's included in S$100/month?",
+        "answer": "Any one RHAD45 product, with ongoing monitoring and support within the agreed scope. Setup, WhatsApp/API usage and third-party software are charged separately. You don't need all four products. If you want more than one, we'll confirm the scope and pricing before you proceed."
+      },
+      {
+        "question": "What happens in the 45-minute business review?",
+        "answer": "Akash and Ashwin review your goals, current accounts and customer journey with you. Together, you'll identify where automation could help, which product is relevant and what needs to be scoped. If SEO, social media or marketing strategy deserves attention, those services are discussed separately."
+      }
+    ]
+  },
+  "conversion": {
+    "id": "business-review",
+    "eyebrow": "LET'S CONNECT THE NEXT STEP",
+    "headline": "What can your business stop chasing?",
+    "body": "Arrange a 45-minute business review with Akash and Ashwin. We'll look at what's working, what's getting missed and where a RHAD45 product could help.",
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Your name",
+          "type": "text",
+          "required": true,
+          "autocomplete": "name",
+          "error": "Enter your name."
+        },
+        {
+          "name": "email",
+          "label": "Business email",
+          "type": "email",
+          "required": true,
+          "autocomplete": "email",
+          "error": "Enter a valid email address."
+        },
+        {
+          "name": "phone",
+          "label": "Mobile number (optional)",
+          "type": "tel",
+          "required": false,
+          "autocomplete": "tel"
+        },
+        {
+          "name": "company",
+          "label": "Company",
+          "type": "text",
+          "required": true,
+          "autocomplete": "organization",
+          "error": "Enter your company name."
+        },
+        {
+          "name": "interest",
+          "label": "What should we look at first?",
+          "type": "select",
+          "required": true,
+          "placeholder": "Choose an area",
+          "options": [
+            "WhatsApp enquiries",
+            "Customer retention",
+            "Reviews",
+            "Reporting & decisions",
+            "SEO / Social / Strategy",
+            "Not sure"
+          ],
+          "error": "Choose an area, or select Not sure."
+        },
+        {
+          "name": "context",
+          "label": "A little context (optional)",
+          "type": "textarea",
+          "required": false,
+          "help": "Tell us where follow-through gets difficult."
+        }
+      ],
+      "notice": "We'll use these details to respond to your enquiry and arrange your business review.",
+      "submit": "Send business review request",
+      "pending": "Sending your request…",
+      "success": "Thanks. RHAD has received your request. Our team will contact you to confirm a time for your 45-minute business review.",
+      "failure": "We couldn't send your request. Your details are still here. Please try again.",
+      "validationSummary": "Check the highlighted fields and try again.",
+      "appointmentNote": "Submitting this form requests a review. It does not confirm an appointment."
+    }
+  },
+  "footer": {
+    "brandLine": "Business, joined up.",
+    "provenance": "RHAD45 is a RHAD product.",
+    "copyright": "© 2026 RHAD. All rights reserved.",
+    "parentLink": {
+      "label": "Visit RHAD",
+      "href": "https://www.rhad.agency/"
+    },
+    "privacyLabel": "Privacy"
+  }
+}

@@ -1,0 +1,34 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate repo
+        run: node tools/validate.mjs
+      - name: Director agents in sync
+        run: node tools/build-agents.mjs --check
+      - name: Check shell installers
+        run: |
+          bash -n install.sh
+          bash -n plugins/rhad-web/skills/rhad-web/scripts/install-skills.sh
+      - name: Dry-run installer
+        run: |
+          bash install.sh --dry-run --skip-deps --agent claude
+          bash install.sh --dry-run --skip-deps --agent codex
+      - name: Build .skill
+        run: node tools/build-skill.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rhad-web-skill
+          path: dist/rhad-web.skill
+          if-no-files-found: error

@@ -1,0 +1,142 @@
+{
+  "tools": [
+    {
+      "id": "ffmpeg",
+      "check": [
+        "ffmpeg",
+        "-version"
+      ],
+      "win": "winget install -e --id Gyan.FFmpeg",
+      "mac": "brew install ffmpeg",
+      "linux": "sudo apt-get install -y ffmpeg",
+      "fix": "Install it yourself: Windows `winget install -e --id Gyan.FFmpeg` in a normal terminal (or https://www.gyan.dev/ffmpeg/builds/), macOS `brew install ffmpeg`, Linux `sudo apt-get install ffmpeg`. Then open a new terminal, or set FFMPEG_PATH and FFPROBE_PATH. Optional: used to crop screenshots exactly and to optimise media."
+    },
+    {
+      "id": "ffprobe",
+      "check": [
+        "ffprobe",
+        "-version"
+      ],
+      "note": "installed with ffmpeg",
+      "fix": "Comes with ffmpeg. Optional."
+    },
+    {
+      "id": "node",
+      "check": [
+        "node",
+        "--version"
+      ],
+      "note": "Node 22+ recommended",
+      "fix": "Install Node 22 or newer from https://nodejs.org, then open a new terminal. Required for the scripts."
+    },
+    {
+      "id": "playwright-cli",
+      "check": [
+        "playwright-cli",
+        "--version"
+      ],
+      "all": [
+        "npm install -g @playwright/cli@latest",
+        "playwright-cli install --skills"
+      ],
+      "fix": "Run `npm install -g @playwright/cli@latest` in a normal terminal (a global npm install can need an admin terminal or an npm prefix you own), then `playwright-cli install --skills`. Optional: shoot.mjs only needs Chrome or Edge."
+    }
+  ],
+  "placeholders": {
+    "claude": {
+      "skillsAgent": "claude-code",
+      "uiproAgent": "claude"
+    },
+    "codex": {
+      "skillsAgent": "codex",
+      "uiproAgent": "codex"
+    }
+  },
+  "skillsDir": {
+    "claude": ".claude/skills",
+    "codex": ".agents/skills"
+  },
+  "skills": [
+    {
+      "id": "impeccable",
+      "dirs": [
+        "impeccable"
+      ],
+      "all": [
+        "npx --yes impeccable install"
+      ],
+      "note": "interactive: pick your agent and say yes to the design hook",
+      "fix": "It is an interactive installer. Run `npx impeccable install` in a normal terminal, pick your agent (Claude Code or Codex) and say yes to the design hook. Recommended: the slop director uses `impeccable detect`."
+    },
+    {
+      "id": "taste-skill",
+      "dirs": [
+        "taste-skill",
+        "design-taste-frontend"
+      ],
+      "all": [
+        "npx --yes skills add https://github.com/Leonxlnx/taste-skill --skill design-taste-frontend -g -a {skillsAgent} -y"
+      ],
+      "fix": "Run the command in a normal terminal with network access and Node 22 or newer. Optional: the art-direction and look-and-fix method."
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "dirs": [
+        "ui-ux-pro-max",
+        "uiuxpro"
+      ],
+      "all": [
+        "npm install -g ui-ux-pro-max-cli",
+        "uipro init --ai {uiproAgent} -g"
+      ],
+      "note": "also installs banner-design, brand, design, design-system, slides and ui-styling; use -Skip ui-ux-pro-max if those names clash with skills you already have",
+      "fix": "Run `npm install -g ui-ux-pro-max-cli`, then `uipro init --ai claude -g` (or `--ai codex -g`) in a normal terminal. It also adds several design skills; skip it if those names clash. Optional: UX and accessibility data."
+    },
+    {
+      "id": "gsap-skills",
+      "dirs": [
+        "gsap-core",
+        "gsap",
+        "gsap-skills"
+      ],
+      "all": [
+        "npx --yes skills add https://github.com/greensock/gsap-skills -g -a {skillsAgent} -y"
+      ],
+      "fix": "Run the command in a normal terminal with network access. Needed for GSAP animation work."
+    },
+    {
+      "id": "three-agent-skills",
+      "dirs": [
+        "three-best-practices",
+        "r3f-best-practices"
+      ],
+      "all": [
+        "npx --yes skills add emalorenzo/three-agent-skills -g -a {skillsAgent} -y"
+      ],
+      "note": "no licence declared in the repository metadata; check before commercial use",
+      "fix": "Run the command in a normal terminal with network access. Needed only for three.js work. The repository declares no licence, so confirm terms before commercial use."
+    },
+    {
+      "id": "remotion",
+      "dirs": [
+        "remotion-best-practices",
+        "remotion"
+      ],
+      "all": [
+        "npx --yes skills add remotion-dev/skills -g -a {skillsAgent} -y"
+      ],
+      "fix": "Run the command in a normal terminal. Needed only for React-to-video work. Remotion has its own licence terms for commercial use."
+    },
+    {
+      "id": "hyperframes",
+      "dirs": [
+        "hyperframes"
+      ],
+      "all": [
+        "npx --yes hyperframes skills update"
+      ],
+      "fix": "Run `npx hyperframes skills update` in a normal terminal. Needed only for HTML-to-video work."
+    }
+  ],
+  "bundled": []
+}

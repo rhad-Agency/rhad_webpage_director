@@ -1,0 +1,44 @@
+{
+  "name": "rhad-web",
+  "version": "1.0.0",
+  "description": "RHAD website, landing page and service page design and build: verified brief, RHAD tokens, fonts, logos and components, professional design, motion and 3D skills (impeccable, taste, ui-ux-pro-max, GSAP, three.js, Remotion, HyperFrames), plus two read-only director agents that gate the work: an AI-slop director and a UX-flow director. Covers RHAD, RHAD45 and EDGE-style pages.",
+  "author": {
+    "name": "RHAD",
+    "url": "https://www.rhad.agency/"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "web-design",
+    "landing-page",
+    "service-page",
+    "rhad",
+    "rhad45",
+    "gsap",
+    "threejs",
+    "ux",
+    "accessibility",
+    "ai-slop"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "RHAD Web",
+    "shortDescription": "RHAD pages and landing pages",
+    "longDescription": "Design and build RHAD websites, landing pages and service pages from a verified brief: RHAD tokens, fonts and components, GSAP and three.js motion, mechanical checks at five widths, and two read-only director agents (AI-slop and UX-flow) that must pass before anything is shown as ready. Never deploys without an explicit yes.",
+    "developerName": "RHAD",
+    "category": "Design",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.rhad.agency/",
+    "defaultPrompt": [
+      "Design a RHAD service page. Ask me for the brand, goal and audience first.",
+      "Build a RHAD45 landing page. Confirm the brief and direction with me first.",
+      "Review this page with the AI-slop and UX directors."
+    ],
+    "brandColor": "#D90A2C",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

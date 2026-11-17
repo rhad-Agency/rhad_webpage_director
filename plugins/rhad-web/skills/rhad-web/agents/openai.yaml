@@ -1,0 +1,10 @@
+interface:
+  display_name: "RHAD Web"
+  short_description: "RHAD pages and landing pages"
+  icon_small: "./assets/rhad/logos/rhad-logo-red-tight.png"
+  icon_large: "./assets/rhad/logos/rhad-logo-red.png"
+  brand_color: "#D90A2C"
+  default_prompt: "Design a RHAD page. First confirm the brand, page type, goal, platform and audience with me, then show drafts for my critique at each checkpoint."
+
+policy:
+  allow_implicit_invocation: true
