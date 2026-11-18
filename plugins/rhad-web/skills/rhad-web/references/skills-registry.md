@@ -12,6 +12,7 @@
 | **gsap-skills** | github.com/greensock/gsap-skills | `npx skills add https://github.com/greensock/gsap-skills -g -a <agent> -y` | GSAP core, timelines, ScrollTrigger, plugins, React |
 | **three-agent-skills** | github.com/emalorenzo/three-agent-skills (no licence declared in the repository metadata, check before commercial use) | `npx skills add emalorenzo/three-agent-skills -g -a <agent> -y` | three.js and React Three Fiber best practices |
 | **remotion** | github.com/remotion-dev/skills | `npx skills add remotion-dev/skills -g -a <agent> -y` | React-built video for hero loops and promos |
+| **scroll-craft** | github.com/nateherkai/scroll-craft (MIT) | `npx skills add https://github.com/nateherkai/scroll-craft --skill scroll-craft -g -a <agent> -y` (Claude Code alternative: `/plugin marketplace add nateherkai/scroll-craft`, then `/plugin install nateherk-design@nateherk`) | Scroll-driven pages: grammars, devices, hero depth, scroll engine, video encoding, scroll-position verification. Optional kie.ai generation needs the user's own key and a yes on cost. See `scroll-pages.md` |
 | **hyperframes** | github.com/heygen-com/hyperframes | `npx hyperframes skills update` | HTML-built video |
 | **playwright-cli** | github.com/microsoft/playwright-cli | `npm install -g @playwright/cli@latest`, then `playwright-cli install --skills` | Browser checks and screenshots (optional: `shoot.mjs` needs only Chrome or Edge) |
 | **ffmpeg, ffprobe** | ffmpeg.org | `winget install -e --id Gyan.FFmpeg`, `brew install ffmpeg` | Optimising video and images (optional) |
@@ -34,9 +35,9 @@ Installed by `scripts/install-directors.mjs` (also run by the root installer). B
 | Step | Tools |
 |---|---|
 | Discover | `shoot.mjs`, `impeccable detect`, playwright-cli |
-| Plan | This skill's `page-types.md`; ui-ux-pro-max for UX data |
+| Plan | This skill's `page-types.md`; ui-ux-pro-max for UX data; scroll-craft's grammar, feeling curve and scroll score for scroll-driven pages |
 | Design direction | taste-skill method, impeccable critique vocabulary, ui-ux-pro-max |
-| Build | Templates, GSAP skills, three-agent-skills, remotion or hyperframes for video |
+| Build | Templates, GSAP skills, three-agent-skills, remotion or hyperframes for video, scroll-craft for scroll-driven pages |
 | Verify | `web-lint.mjs`, `shoot.mjs --probe`, Lighthouse, `impeccable detect`, the two directors |
 | SEO | `seo-and-schema.md`, seo skills if present |
 

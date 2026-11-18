@@ -22,6 +22,7 @@ Companion skills supply **method**. This skill supplies **identity and standards
 | gsap-skills | Teaches the API and common patterns | Keep. Apply `motion-and-3d.md` for timing, reduced motion and no scroll-jacking |
 | three-agent-skills | Best practices for three.js and R3F | Keep for performance and correctness. 3D is allowed only by the decision test |
 | remotion, hyperframes | Video authoring contracts and defaults (including `power3.out` and fade-up house defaults) | Keep their render contracts. Override timing and curves with `motion-and-3d.md` |
+| scroll-craft | Its own interview, page grammars, fonts (Archivo, Geist), colour roles, kie.ai generation, pinned acts and scrubbed video | Keep the method: grammars, devices, feeling curve, one peak, signature move, fingerprint gate, hero depth, engine, encode and verify scripts. Merge its questions into Step 1. Fonts and colours are RHAD tokens. Imagery via ChatGPT; kie.ai only after the user's yes on cost. Motion follows `scroll-pages.md` |
 | Any skill | Suggests gradients, glass, glow, shadows, pill badges, icon cards, stock imagery | Not allowed in RHAD pages unless a brand file allows the specific use |
 | Any skill | Wants to deploy, push, publish or submit | Not without the user's explicit yes |
 | Any skill | Suggests a Tailwind default palette or shadcn defaults | Tokens only |

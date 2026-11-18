@@ -1,6 +1,6 @@
 # RHAD_Web_Skill
 
-Design and build RHAD websites, landing pages and service pages in **Claude Code and Codex**, from a verified brief to a tested page. Brand tokens, fonts, logos and components are built in. Professional design, motion and 3D skills are installed alongside (impeccable, taste-skill, ui-ux-pro-max, GSAP, three.js, Remotion, HyperFrames). **Two read-only director agents gate the work: an AI-slop director and a UX-flow director.**
+Design and build RHAD websites, landing pages and service pages in **Claude Code and Codex**, from a verified brief to a tested page. Brand tokens, fonts, logos and components are built in. Professional design, motion and 3D skills are installed alongside (impeccable, taste-skill, ui-ux-pro-max, GSAP, three.js, Remotion, HyperFrames, scroll-craft). Ask for a scrollable or scroll-driven page and it runs in scroll-craft mode. **Two read-only director agents gate the work: an AI-slop director and a UX-flow director.**
 
 Covers RHAD (agency), RHAD45 (product line, with its two documented directions) and EDGE-style campaign pages.
 
@@ -118,6 +118,7 @@ Commands for each agent live in `plugins/rhad-web/skills/rhad-web/scripts/skills
 | gsap-skills | github.com/greensock/gsap-skills | GSAP animation |
 | three-agent-skills | github.com/emalorenzo/three-agent-skills | three.js and React Three Fiber (no licence declared: check) |
 | remotion, hyperframes | remotion-dev/skills, heygen-com/hyperframes | Video assets |
+| scroll-craft | github.com/nateherkai/scroll-craft (MIT) | Scroll-driven pages: grammars, scroll engine, hero depth, scroll-position checks |
 | playwright-cli, ffmpeg | microsoft/playwright-cli, ffmpeg.org | Optional: browser checks, exact screenshot crop, media |
 | Node 22+, Chrome or Edge | | Scripts and screenshots |
 

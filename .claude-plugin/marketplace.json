@@ -12,7 +12,7 @@
       "name": "rhad-web",
       "source": "./plugins/rhad-web",
       "description": "RHAD website, landing page and service page design and build: verified brief, RHAD tokens, fonts, logos and components, professional design, motion and 3D skills (impeccable, taste, ui-ux-pro-max, GSAP, three.js, Remotion, HyperFrames), plus two read-only director agents that gate the work: an AI-slop director and a UX-flow director. Covers RHAD, RHAD45 and EDGE-style pages.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "RHAD",
         "url": "https://www.rhad.agency/"

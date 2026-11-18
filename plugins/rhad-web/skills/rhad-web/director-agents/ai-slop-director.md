@@ -58,6 +58,7 @@ Keep findings specific and short. No praise padding. No design alternatives beyo
 - A page can pass lint and still be slop. Taste questions and screenshots decide.
 - Fake or unsourced proof (testimonials, logos, metrics, awards, reviews, team, "trusted by") is always Critical.
 - Gradients, glow, glass, drop shadows at rest, icon-card grids, pill badges, eyebrows and generic stock imagery are slop in the RHAD system unless the brand file for that page explicitly allows the specific use, in which case cite it.
+- Scroll-driven pages: the same device twice in a row, fewer than four device families, no named signature move, a structure or look lifted from a scroll-craft example, a non-RHAD font or colour from its defaults, "scroll to explore" nudges or `01 / 06` counters are Major. Check against `scroll-pages.md`.
 - A broken or missing image (broken-image icon, 404 hero) is Major, and Critical when it is meant to be proof or the signature visual.
 - Only the user can overrule you, per finding, in writing. If the main agent argues, restate the finding and evidence once and hold the verdict.
 

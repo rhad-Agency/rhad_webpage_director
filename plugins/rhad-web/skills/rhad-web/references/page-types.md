@@ -11,6 +11,7 @@ Ask which page type before planning. Each blueprint is a starting order, not a t
 | **Homepage** | Say what RHAD is and route people | Mixed intent | Start a conversation |
 | **Microsite or event page** | One time-boxed story | Invited or following a campaign | RSVP or enquire |
 | **Pricing or enquiry page** | Remove doubt and capture the lead | Ready to act | Submit the form |
+| **Scroll-driven landing page** (any of the above, told by scrolling) | Make the offer felt, act by act, with one memorable peak | Arrived from a campaign, brand-curious | The same single action, always reachable. See `scroll-pages.md` |
 
 ## Service page blueprint
 

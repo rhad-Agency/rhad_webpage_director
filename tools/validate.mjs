@@ -98,7 +98,7 @@ if (man) {
   for (const s of man.skills) { if (!(s.claude || s.all)?.length || !(s.codex || s.all)?.length) fail(`manifest: ${s.id} lacks a command for an agent`); if (!s.fix) fail(`manifest: ${s.id} has no fix hint`); }
   for (const t of man.tools) if (!t.fix) fail(`manifest: tool ${t.id} has no fix hint`);
   for (const ag of ['claude', 'codex']) if (!man.placeholders?.[ag]?.skillsAgent || !man.skillsDir?.[ag]) fail(`manifest: placeholders/skillsDir missing for ${ag}`);
-  const need = ['impeccable', 'taste-skill', 'ui-ux-pro-max', 'gsap-skills', 'three-agent-skills', 'remotion', 'hyperframes'];
+  const need = ['impeccable', 'taste-skill', 'ui-ux-pro-max', 'gsap-skills', 'three-agent-skills', 'remotion', 'hyperframes', 'scroll-craft'];
   const have = new Set(man.skills.map((s) => s.id)); const miss = need.filter((n) => !have.has(n)); miss.length ? fail(`manifest is missing required skills: ${miss.join(', ')}`) : ok('manifest has all required companion skills for both agents');
 }
 { const ps = rd(join(base, 'scripts/install-skills.ps1')), sh = rd(join(base, 'scripts/install-skills.sh')); /Show-Failures/.test(ps) && /Retry the failed items/.test(ps) && /Do-Directors/.test(ps) && /show_failures/.test(sh) && /directors\(\)/.test(sh) ? ok('installers verify, explain, offer retry and install directors') : fail('installers lost failure handling or the directors step'); }

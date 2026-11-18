@@ -136,6 +136,17 @@
         "npx --yes hyperframes skills update"
       ],
       "fix": "Run `npx hyperframes skills update` in a normal terminal. Needed only for HTML-to-video work."
+    },
+    {
+      "id": "scroll-craft",
+      "dirs": [
+        "scroll-craft"
+      ],
+      "all": [
+        "npx --yes skills add https://github.com/nateherkai/scroll-craft --skill scroll-craft -g -a {skillsAgent} -y"
+      ],
+      "note": "kie.ai image and video generation is optional and needs your own key; RHAD uses ChatGPT for imagery by default",
+      "fix": "Run the command in a normal terminal with network access and Node 22 or newer. In Claude Code you can also run `/plugin marketplace add nateherkai/scroll-craft` then `/plugin install nateherk-design@nateherk`. Needed for scroll-driven pages (see references/scroll-pages.md)."
     }
   ],
   "bundled": []

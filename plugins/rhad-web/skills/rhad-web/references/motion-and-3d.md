@@ -1,13 +1,13 @@
 # Motion, video and 3D for RHAD web pages
 
-Tools: **GSAP** (`gsap-skills`) for web animation, **three.js** (`three-agent-skills`: `three-best-practices`, `r3f-best-practices`) for 3D, **Remotion** and **HyperFrames** for rendered video assets, **impeccable** and **taste-skill** for critique. The brand files decide; these skills advise (`precedence.md`).
+Tools: **GSAP** (`gsap-skills`) for web animation, **scroll-craft** for scroll-driven pages (`scroll-pages.md`), **three.js** (`three-agent-skills`: `three-best-practices`, `r3f-best-practices`) for 3D, **Remotion** and **HyperFrames** for rendered video assets, **impeccable** and **taste-skill** for critique. The brand files decide; these skills advise (`precedence.md`).
 
 ## Principles
 
 1. **One signature motion idea per page.** The monument entrance, the red thread drawing, the studio playing a labelled example, the cube turning. Everything else is quiet.
 2. **Motion explains or confirms.** It shows a mechanism working, guides the eye to the action, or confirms a change. It is never decoration.
 3. **Content is visible first.** Animations start from a visible resting state and enhance. Nothing is hidden until scrolled. A full-page screenshot with scripts blocked must show the whole page.
-4. **The visitor stays in control.** No scroll-jacking, no pinned sections that trap scrolling, no custom scroll physics, no blocking intros. Auto-advancing content stops on hover, focus or a visitor's choice.
+4. **The visitor stays in control.** No scroll-jacking, no pinned sections that trap scrolling, no custom scroll physics, no blocking intros. Auto-advancing content stops on hover, focus or a visitor's choice. **Exception:** a scroll-driven page the user asked for follows `scroll-pages.md`, which allows pinned acts and scrubbed video but still never touches native scroll.
 5. **Reduced motion is a first-class path.** `prefers-reduced-motion: reduce` shows end states, no autoplay, no parallax, no scroll-linked transforms, no looping.
 6. **Cheap to run.** Transform and opacity only. No layout thrash. Nothing animates offscreen. Budget stated before building.
 
@@ -61,7 +61,7 @@ Budgets and rules:
 
 - [ ] Full-page screenshot with scripts blocked shows all content
 - [ ] Reduced-motion run shows end states and no movement
-- [ ] No scroll-jacking, no pinned trap
+- [ ] No scroll-jacking, no pinned trap (scroll-driven pages: the `scroll-pages.md` checklist instead)
 - [ ] One signature motion idea, named
 - [ ] Only transform, opacity and clip-path animated
 - [ ] Offscreen animation paused

@@ -1,8 +1,8 @@
 ---
 name: rhad-web
-description: "RHAD website, landing page and service page design and build. Verifies brand, goal, page type, audience and platform first, then plans, designs, builds and checks responsive pages with RHAD tokens, fonts, logos and components, using professional design, motion and 3D skills (impeccable, taste, ui-ux-pro-max, GSAP, three.js, remotion, hyperframes). Two read-only director agents gate the work: an AI-slop director and a UX-flow director. Use whenever the user asks for a webpage, landing page, service page, campaign microsite, homepage, hero section, pricing or enquiry page, or web design for RHAD, RHAD45 or an EDGE-style grant page. Always confirms the brief, asks for the user's critique at every checkpoint, and never deploys or submits anything without an explicit yes."
+description: "RHAD website, landing page and service page design and build. Verifies brand, goal, page type, audience and platform first, then plans, designs, builds and checks responsive pages with RHAD tokens, fonts, logos and components, using professional design, motion and 3D skills (impeccable, taste, ui-ux-pro-max, GSAP, three.js, remotion, hyperframes, scroll-craft). Two read-only director agents gate the work: an AI-slop director and a UX-flow director. Use whenever the user asks for a webpage, landing page, service page, campaign microsite, homepage, hero section, pricing or enquiry page, or web design for RHAD, RHAD45 or an EDGE-style grant page. Also use it, in scroll-craft mode, for any scrollable or scroll-driven webpage or landing page: scrollytelling, a page where scrolling plays a video, a layered or cinematic hero, an interactive scroll experience. Always confirms the brief, asks for the user's critique at every checkpoint, and never deploys or submits anything without an explicit yes."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   owner: RHAD
 ---
 
@@ -27,7 +27,7 @@ Plain Markdown plus Node scripts, so it runs the same in both. Where a step name
 7. **Real content only.** No lorem ipsum, no placeholder images, no dummy dashboards, no fake chat that pretends to be live. Every claim, number and name traces to the brief or a cited source.
 8. **Accessibility, performance and responsiveness are requirements.** WCAG 2.2 AA, Core Web Vitals targets, 360 to 1440 px layouts, reduced-motion support. See `references/ux-standards.md`.
 9. **Tokens and fonts are fixed.** Colours, type, spacing and geometry come from the packaged tokens. Fonts are the packaged Unbounded and Plus Jakarta Sans files, self-hosted, **the same two on every RHAD and RHAD45 page; no third font**. Off-token values need a written reason that the user approved.
-10. **Motion and 3D must earn their place.** One signature motion idea per page. GSAP with reduced-motion support, no scroll-jacking, no content hidden until scrolled. Three.js only when it carries the message and has a static fallback and a budget. See `references/motion-and-3d.md`.
+10. **Motion and 3D must earn their place.** One signature motion idea per page. GSAP with reduced-motion support, no scroll-jacking, no content hidden until scrolled. Three.js only when it carries the message and has a static fallback and a budget. See `references/motion-and-3d.md`. **Scroll-driven pages** (the user asked for a scrollable or scroll-told page) run in scroll-craft mode with the rules in `references/scroll-pages.md`: pinned acts and scrubbed video are allowed, native scroll is never touched.
 11. **Never deploy, publish, submit or send** to a live site, hosting account, analytics property, CMS or form endpoint without the user's explicit yes. Forms never fake success: success is shown only after a confirmed receipt. No personal data in analytics. Credentials stay server-side.
 12. **Concept first for imagery.** Every image or illustration is a visible version of what the section says. Write the concept brief (`references/imagery-web.md`) before generating or placing one. Image generation goes through ChatGPT unless the user says otherwise.
 13. **Ask before installing.** The installer changes the user's machine. Show what it will run, get a yes, then run it.
@@ -43,7 +43,7 @@ Run `scripts/preflight.mjs`. It reports which companion skills, tools and direct
 | Need | What to check | If missing or vague |
 |---|---|---|
 | **Brand** | Does the message name RHAD (agency), RHAD45 (product line) or another campaign (for example EDGE grant)? A topic is not a brand | Ask. Do not choose |
-| **Page type** | Homepage, service page, campaign or ad landing page, pricing or enquiry page, microsite, section or hero only, redesign of an existing page | Ask. Offer the list in `references/page-types.md`, recommend one |
+| **Page type** | Homepage, service page, campaign or ad landing page, pricing or enquiry page, microsite, section or hero only, redesign of an existing page | Ask. Offer the list in `references/page-types.md`, recommend one. If they ask for a scrollable, scroll-driven or scroll-told page, confirm **scroll-craft mode** and add its brief questions to this same message (`references/scroll-pages.md`) |
 | **Information and offer** | What is offered, price, inclusions, exclusions, proof available, legal or grant wording, existing copy. Who supplied each fact | Ask for each gap. List what you treat as given and what is `[NEEDS]` |
 | **Goal and conversion** | The one action the page exists for (enquiry form, WhatsApp, call, booking, download) and the measure of success. Where leads go | Ask. Recommend one primary, at most one secondary |
 | **Target platform and stack** | Live site, CMS, framework or static hosting, domain or path, devices that matter, markets and languages, analytics in use, form endpoint, privacy URL | Ask. Inspect the repository or site first if one exists, then confirm what you found |
@@ -68,6 +68,7 @@ Write, as plain text, before any design:
 3. **Conversion path**: every route to the primary action, what is pre-filled, what happens on success and failure.
 4. **Signature idea**: the one visual or interaction idea that makes this page unmistakably RHAD (the monument type, the cube, the red thread, a working mechanism shown rather than described). If you cannot name it, you are heading for slop.
 5. **Content inventory**: what is given, what is `[NEEDS]`, and who supplies it.
+6. **Scroll-craft mode only**: the page grammar, journey map, feeling curve with one peak, scroll score (four or more device families, never the same twice in a row), the signature move and the fingerprint gate, from scroll-craft's method (`references/scroll-pages.md`).
 
 ## Step 4: Design direction (checkpoint 3)
 
@@ -82,6 +83,7 @@ Write, as plain text, before any design:
 - Stack: follow the existing repository. For a new campaign page the default is static HTML, CSS and JS in one folder with shared assets, as the RHAD EDGE and RHAD45 pages are built; the alternative is Vite with TypeScript. See `references/build-stack.md`.
 - Start from the starter: `node scripts/new-page.mjs <dir> --type service|lp --brand rhad` (or `--brand rhad45 --direction a|b`, which **needs the direction the user chose**). It copies the page, CSS, JS, tokens, fonts and the right logos, and writes `PRODUCT.md`, `DESIGN.md` and `handoff.md` stubs. Keep fonts and tokens together so relative URLs resolve.
 - Animation with GSAP (`gsap-skills`), 3D with `three-agent-skills`, video assets with `remotion` or `hyperframes`. Follow `references/motion-and-3d.md`.
+- Scroll-driven pages: the `scroll-craft` engine (`scrollcraft.js` and `.css`) themed with RHAD tokens and fonts, its hero-depth planes and devices, video encoded with its `encode.sh`. Image generation stays on ChatGPT; its kie.ai generation only after the user's yes on cost. Verify with its scroll-position screenshots as well as Step 6 (`references/scroll-pages.md`).
 - Forms use a configurable real endpoint and never simulate success. Analytics use an adapter and carry no personal data. Missing endpoint or privacy URL: finish the UI, report the missing configuration, do not fake it.
 - Build in vertical slices. After each slice run the checks in Step 6 on it. Do not stack ten sections and then discover the problem.
 
@@ -133,6 +135,7 @@ verification/                     screenshots at 5 widths, probe results, lint o
 | `references/page-types.md` | Choosing and planning a page type |
 | `references/copy-web.md` | Writing any page copy |
 | `references/motion-and-3d.md` | Any animation, video or 3D |
+| `references/scroll-pages.md` | Any scrollable or scroll-driven page (scroll-craft mode) |
 | `references/imagery-web.md` | Any image, illustration or collage |
 | `references/ai-slop-catalogue.md` | Always, and the slop director's rubric |
 | `references/ux-standards.md` | Always, and the UX director's rubric |

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0
+
+- Scroll-driven pages: **scroll-craft** (github.com/nateherkai/scroll-craft, MIT) added as a companion skill, installed and verified by the installers and checked by preflight and validation
+- The skill now triggers for any scrollable or scroll-driven webpage or landing page and runs it in scroll-craft mode: one merged brief (its eight questions folded into Step 1), its grammar, feeling curve, one peak, device variety, signature move and fingerprint gate in the plan, its engine, hero depth and encoding in the build, its scroll-position screenshots in the checks
+- New `references/scroll-pages.md`: RHAD fonts and tokens override scroll-craft's, ChatGPT stays the image route (kie.ai only after the user's yes on cost), pinned acts and scrubbed video allowed within limits while native scroll, keyboard and find-in-page are never touched, a static reduced-motion composition, phone acts art-directed separately
+- Both directors, `precedence.md`, `motion-and-3d.md`, `page-types.md` and the registry updated to match
+
 ## 1.0.0
 
 First release.

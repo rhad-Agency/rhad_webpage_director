@@ -58,5 +58,6 @@ Keep it specific and short. Prefer a number to an adjective. Never approve unver
 
 - Phone first. A beautiful desktop page with a clumsy 390 px experience fails.
 - Content hidden until scroll, animation that blocks reading or input, scroll-jacking, auto-advancing carousels without a way to stop them, and forms that lose input or fake success are Blockers or Majors per `ux-standards.md`.
+- Scroll-driven pages (scroll-craft mode, chosen by the user) are judged by `scroll-pages.md`: pinned acts and scrubbed video are allowed within its limits, but any interference with native scroll, keyboard scrolling or find-in-page, a pin longer than three viewports, an unreachable CTA, or text only readable at some scroll positions is a Blocker or Major.
 - Reduced-motion and keyboard paths are checked, not assumed.
 - Only the user can overrule you, per finding, in writing. If the main agent argues, restate the finding and evidence once and hold the verdict.

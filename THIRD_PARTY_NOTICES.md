@@ -22,5 +22,6 @@ Downloaded from their own sources at install time under their own licences. Chec
 | three-agent-skills | https://github.com/emalorenzo/three-agent-skills | No licence declared in the repository metadata at the time of writing. Confirm before commercial use |
 | remotion skills | https://github.com/remotion-dev/skills | Remotion has company licence terms for commercial use |
 | hyperframes | https://github.com/heygen-com/hyperframes | See repository |
+| scroll-craft | https://github.com/nateherkai/scroll-craft | MIT, Copyright (c) 2026 Nate Herk. Its optional kie.ai generation is a paid third-party service under kie.ai's terms |
 | playwright-cli | https://github.com/microsoft/playwright-cli | Apache-2.0 |
 | ffmpeg | https://ffmpeg.org | LGPL or GPL depending on build |
