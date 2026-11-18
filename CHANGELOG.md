@@ -6,6 +6,7 @@
 - The skill now triggers for any scrollable or scroll-driven webpage or landing page and runs it in scroll-craft mode: one merged brief (its eight questions folded into Step 1), its grammar, feeling curve, one peak, device variety, signature move and fingerprint gate in the plan, its engine, hero depth and encoding in the build, its scroll-position screenshots in the checks
 - New `references/scroll-pages.md`: RHAD fonts and tokens override scroll-craft's, ChatGPT stays the image route (kie.ai only after the user's yes on cost), pinned acts and scrubbed video allowed within limits while native scroll, keyboard and find-in-page are never touched, a static reduced-motion composition, phone acts art-directed separately
 - Both directors, `precedence.md`, `motion-and-3d.md`, `page-types.md` and the registry updated to match
+- Windows installer fixes, found on a real install: `install-skills.ps1` no longer reports successful installs as failed (command output was being read as the exit code), and `-Only a,b` / `-Skip a,b` now work through `powershell -File` and from the root `install.ps1`, so the printed "retry only these" command actually retries them
 
 ## 1.0.0
 

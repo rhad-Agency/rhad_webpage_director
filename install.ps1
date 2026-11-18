@@ -15,6 +15,9 @@ param(
   [string[]]$Only = @(),
   [string[]]$Skip = @()
 )
+# -File passes "a,b" as one string; split it so -Only and -Skip work from any caller.
+$Only = @($Only | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+$Skip = @($Skip | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $MyInvocation.MyCommand.Path
 $src = Join-Path $repo 'plugins\rhad-web\skills'

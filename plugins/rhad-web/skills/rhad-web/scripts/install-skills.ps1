@@ -13,6 +13,9 @@ param(
   [string]$Manifest = '',
   [switch]$NoRetry
 )
+# -File passes "a,b" as one string; split it so -Only and -Skip work from any caller.
+$Only = @($Only | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+$Skip = @($Skip | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 $ErrorActionPreference = 'Continue'
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $root = Split-Path -Parent $here
@@ -27,8 +30,10 @@ function Have-Cmd($c) { return [bool](Get-Command $c -ErrorAction SilentlyContin
 function Run($cmd) {
   Write-Host "  > $cmd" -ForegroundColor Cyan
   if ($DryRun) { return 0 }
-  cmd /c $cmd
-  return $LASTEXITCODE
+  # Send the command's output to the console, not into this function's return value,
+  # or the caller receives text plus the exit code and reads every run as a failure.
+  cmd /c $cmd | Out-Host
+  return [int]$LASTEXITCODE
 }
 function Fill($cmd, $ph) { foreach ($k in $ph.PSObject.Properties.Name) { $cmd = $cmd.Replace('{' + $k + '}', $ph.$k) }; return $cmd }
 function Skills-Home($ag) { if ($SkillsDir) { return $SkillsDir }; return (Join-Path $HOME ($man.skillsDir.$ag -replace '/', '\')) }
